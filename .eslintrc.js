@@ -8,13 +8,22 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
+    'eslint:recommended',
+    'plugin:vue/recommended',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
+    'prettier/vue',
   ],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'vue'],
   // add your custom rules here
-  rules: {},
+  rules: {
+    "vue/component-name-in-template-casing": ["error", "PascalCase"],
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+  },
+  globals: {
+    $nuxt: true
+  },
+  parserOptions: {
+    parser: "babel-eslint"
+  }
 }
