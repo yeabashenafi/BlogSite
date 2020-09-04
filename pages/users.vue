@@ -18,6 +18,7 @@ export default {
       this.$router.push('/users/' + this.id)
     },
   },
+  layout: 'users',
 }
 </script>
 
