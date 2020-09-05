@@ -20,7 +20,7 @@
       </nuxt-link>
       <nuxt-link class="post-preview" :to="'/posts/' + 2">
         <article>
-           <div
+          <div
             class="post-thumbnail"
             style="
               background-image: url('https://images.daznservices.com/di/library/GOAL/e/9f/dani-ceballos-arsenal-2019-20_1rce90yx9ocvv1v1zx8r5m9zh1.jpg?t=-1749342483&amp;quality=60&amp;w=700');
