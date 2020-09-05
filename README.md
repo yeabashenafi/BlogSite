@@ -2,7 +2,7 @@
 
 
 ## Build Setup
-
+Built with nuxt.js .
 ```bash
 # install dependencies
 $ npm install
